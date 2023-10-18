@@ -160,9 +160,41 @@ button {
 * !style rules for common classes
 **/
 
+.text-center{
+  text-align: center;
+}
+
 .container{
   max-width: 1140px;
   margin:auto;
+  align-items: center;
+}
+
+.responsive-image{
+  max-width: 100%;
+  height: auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 0;
+  gap: 25px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.common-title{
+  text-transform: capitalize;
+  font-size: var(--h1);
+  font-weight: bold;
+  font-family: var(--font-1);
+  color: var(--color-white-100);
+
 }
 
 @media (max-width: 1200px){
@@ -182,7 +214,24 @@ button {
     max-width: 500px;
   }
   .navbar__menu {
+    z-index: 1;
     display: none;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    height: 100vh;
+    background-color: var(--color-green-100);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .navbar__menu--1{
+    margin-top: -200px;
   }
 
   .navbar__icons{
@@ -191,6 +240,11 @@ button {
 
   .hide{
     display: none;
+  }
+
+  .hidden{
+    opacity: 0%;
+    z-index: -1;
   }
 }
 

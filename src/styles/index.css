@@ -1,0 +1,13 @@
+/**
+* !style rules for sectionone
+*/
+
+.sectionOne__left--text{
+  font-size: var(--body);
+  color: var(--color-white-75);
+}
+
+.sectionOne__left--btn{
+  align-self: start;
+  margin-top: 20px;
+}
