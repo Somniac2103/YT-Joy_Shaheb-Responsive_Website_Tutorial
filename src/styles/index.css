@@ -1,5 +1,5 @@
 /**
-* !style rules for sectionone
+* !style rules for section one
 */
 
 .sectionOne__left--text{
@@ -10,4 +10,71 @@
 .sectionOne__left--btn{
   align-self: start;
   margin-top: 20px;
+}
+
+/**
+* !style rules for section two
+*/
+.sectionTwo{
+padding: 40px 0;
+display: grid;
+gap: 30px;
+}
+
+.sectionTwo__content--text{
+
+font-family: var(--font-2);
+font-size: var(--sub);
+}
+
+.sectionTwo__logo{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.sectionTwo__logo img {
+  justify-self: center;
+  align-self: center;
+}
+
+.sectionTwo__btn{
+  justify-self: center;
+}
+
+/**
+* !style rules for section three
+*/
+
+.sectionThree__right--text{
+  color: var(--color-dark-50);
+  font-family: var(--font-2);
+  font-size: var(--body);
+}
+
+.sectionThree__right--btn{
+  align-self: start;
+}
+
+
+/**
+* !style rules for section Four
+*/
+
+.sectionFour__left--text{
+  color: var(--color-dark-50);
+  font-family: var(--font-2);
+  font-size: var(--body);
+}
+
+.sectionFour__left--btn{
+  align-self: start;
+}
+
+
+/**
+* !style rules for section Five
+*/
+.sectionFive__content--text{
+  font-size: var(--sub);
+  font-family: var(--font-2);
 }
