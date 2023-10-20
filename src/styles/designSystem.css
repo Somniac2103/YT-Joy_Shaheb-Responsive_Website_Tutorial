@@ -36,6 +36,7 @@
   --color-green-50: rgba(116,198,157,0.5);
   --color-green-25: rgba(116,198,157,0.25);
 
+  --shadow-1: 3px 4px 12px 1px rgba(0,0,0,0.25);
 }
 
 /**
@@ -196,6 +197,21 @@ button {
   font-family: var(--font-1);
 }
 
+.footerWrapper{
+  background-color: var(--color-green-100);
+}
+
+.footerLinks{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+
+.footerLinks__socials{
+  display: flex;
+  gap: 10px;
+}
+
 @media (max-width: 1200px){
   .container{
     max-width: 970px;
@@ -206,9 +222,18 @@ button {
   .container{
     max-width: 740px;
   }
+
+  .common-title {
+    font-size: var(--h4);
+  }
 }
 
 @media (max-width: 768px){
+
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+
   .container{
     max-width: 500px;
   }
