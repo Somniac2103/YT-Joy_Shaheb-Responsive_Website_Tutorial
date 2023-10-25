@@ -6,9 +6,62 @@
   <link rel="icon" href="src/images/Logo/LogoWhite.svg">
   <title>Small Startup - Contact</title>
   <link rel="stylesheet" href="src/styles/designSystem.css">
+  <link rel="stylesheet" href="src/styles/contact.css">
 </head>
 <body>
+  <div class="hero">
+    <div class="navbar container">
+      <div class="navbar__logo">
+        <img src="src/images/Logo/LogoWhite.svg" alt="" class="navbar__logo--image">
+        <div class="navbar__logo--text">Start</div>        
+      </div>
+      <div class="navbar__menu hidden">
+        <a href="index.html" class="navbar__menu--1">Home</a>
+        <a href="portfolio.html" class="navbar__menu--2">Portfolio</a>
+        <a href="services.html" class="navbar__menu--3">Services</a>
+        <a href="contact.html" class="navbar__menu--4">Contact</a>
   
+      </div>
+      <div class="navbar__icons">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x-lg hide"></i>
+      </div>
+    </div>
+  </div>
+  <div class="sectionOne container text-center">
+    <div class="common-title">Contact Us</div>
+    <div class="text ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, officiis sed? Quos!</div>
+  </div>
+  <div class="sectionTwo container grid">
+    <div class="sectionTwo__left">
+      <form action="" class="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name here">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email here">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="6" placeholder="Your Message here..."></textarea>
+        <button type="submit" class="dark-btn">Submit</button>
+      </form>
+    </div>
+    <img src="src/images/Contact/map.svg" class="sectionTwo__right responsive-image">
+  </div>
+
+  <div class="footerWrapper">
+    <div class="footerLinks container">
+      <div class="footerLinks__socials">
+        <img src="src/images/socials/facebook.svg" alt="">
+        <img src="src/images/socials/instagram.svg" alt="">
+        <img src="src/images/socials/twitter.svg" alt="">
+        <img src="src/images/socials/pinterest.svg" alt="">
+        <img src="src/images/socials/tiktok.svg" alt="">
+        <img src="src/images/socials/whatsapp.svg" alt="">
+        <img src="src/images/socials/youtube.svg" alt="">
+      </div>
+      <div class="footerLinks__copyright text-white text-center">&copy; Start 2022. All rights reserved.</div>
+    </div>
+
+  </div>
 </body>
 <script src="/src/main.js"></script>
 </html>
